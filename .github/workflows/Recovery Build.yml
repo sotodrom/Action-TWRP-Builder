@@ -56,7 +56,7 @@ on:
 
 jobs:
   build:
-    if: github.event.repository.owner.id == github.event.owner.id
+    if: github.repository_owner == 'sotodrom'
     runs-on: ubuntu-24.04
     permissions:
       contents: write
